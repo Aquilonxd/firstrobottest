@@ -4,7 +4,7 @@
  Test Teardown    Close Browser
 
  *** Variables ***
- ${HOST}              localhost:7272
+ ${HOST}              localhost:7272    
  ${VALID_USERNAME}    demo
  ${VALID_PASSWORD}    mode
  ${WELCOME_TITLE}     Welcome Page
@@ -21,7 +21,7 @@
 
  *** Keywords ***
  Open Browser To Login Page
-    Open Browser    ${HOST}
+    Open Browser    ${HOST}    chrome
 
  Input Username
     [Arguments]    ${username}
